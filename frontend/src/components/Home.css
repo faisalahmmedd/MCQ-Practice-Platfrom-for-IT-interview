@@ -1,0 +1,127 @@
+/* General container */
+.home-container {
+  max-width: 1000px;
+  height: 450px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #256EFF;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Page title */
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* Instructions */
+.instructions {
+  font-size: 1.3rem;
+  color: #040505;
+  margin-bottom: 25px;
+}
+
+/* Category selection */
+.category-selection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.category-labels {
+  display: flex;
+  align-items: center;
+  margin: 8px 12px;
+  font-size: 1.1rem;
+  color: #0F110C;
+  background: #E26D5A; /* light gray background */
+  padding: 8px 15px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.category-labels:hover {
+  background: #E6AF2E;
+  color: #191716;
+}
+
+.category-labels input[type="checkbox"] {
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  accent-color: #122932; /* checkbox color */
+}
+
+/* Count selection */
+.count-selection {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-selection label {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #191716;
+}
+
+.count-selection select {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.count-selection select:hover {
+  border-color: #3498db;
+
+}
+
+/* Start button */
+.start-btn {
+  padding: 12px 32px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.start-btn:hover {
+  background: #2980b9;
+  box-shadow: 0 8px 20px rgba(41, 128, 185, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .category-selection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-labels {
+    width: 80%;
+    justify-content: center;
+    margin: 8px auto;
+  }
+
+  .count-selection {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

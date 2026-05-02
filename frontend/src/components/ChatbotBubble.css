@@ -1,0 +1,75 @@
+/* Chat Window */
+.chatbot-window {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 450px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Close button in chat window */
+.chatbot-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 1000;
+  border: none;
+  background: #ff4d4f; /* Red background to make it visible */
+  color: #fff; /* White ✖ symbol */
+  font-size: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.chatbot-close-btn:hover {
+  background: #ff1a1a;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+
+/* Iframe inside chat window */
+.chatbot-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Floating bubble button */
+.chatbot-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: transparent; /* remove green background */
+  border: none;
+  cursor: pointer;
+  z-index: 9999;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Image inside bubble */
+.chatbot-bubble-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%; /* make it circular if needed */
+}
+

@@ -1,0 +1,53 @@
+.find-job-container {
+  max-width: 1000px;
+  display: block;
+  margin: 50px auto;
+  text-align: center;
+  padding: 30px;
+  background: #48A9A6;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+.find-job-container:hover {
+  transform: translateY(5px) scale(1.02); /* slight lift and scale */
+  box-shadow: 3px 10px 25px #004BA8; /* stronger shadow */
+}
+
+.find-job-container h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.find-job-container p {
+  font-size: 18px;
+  color: #444;
+}
+.bdjobs-btn-container {
+  text-align: center; /* center the button */
+  margin-bottom: 20px;
+}
+
+.bdjobs-btn {
+  background: linear-gradient(135deg, #340068, #5a189a, #7b2cbf);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(52, 0, 104, 0.4);
+}
+
+.bdjobs-btn:hover {
+  background: linear-gradient(135deg, #7b2cbf, #5a189a, #340068);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(52, 0, 104, 0.6);
+}
+
+.bdjobs-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(13, 211, 92, 0.5);
+}

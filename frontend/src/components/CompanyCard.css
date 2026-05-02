@@ -1,0 +1,26 @@
+.company-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.company-card h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.company-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.company-card:hover {
+  transform: translateY(-5px);
+  background: #f0f8ff;
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.15);
+}

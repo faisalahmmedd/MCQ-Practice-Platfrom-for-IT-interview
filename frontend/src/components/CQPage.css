@@ -1,0 +1,188 @@
+/* CQPage.css */
+
+.cq-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9; /* soft light background */
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.cq-container h2 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cq-question {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background-color: #ffffff;
+  border-left: 5px solid #007bff; /* blue highlight for question */
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.cq-question:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  
+}
+
+.cq-question strong {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #007bff;
+}
+
+.cq-answer {
+  margin-left: 10px;
+  font-style: italic;
+  color: #130404;
+  background-color: #f1f5f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+.practice-sql-btn {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #003F91; /* nice green */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.practice-sql-btn:hover {
+  background: linear-gradient(135deg, #ff6347, #ff4500, #ff7f50);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.practice-sql-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.study-more-btn {
+  background: linear-gradient(135deg, #340068, #5a189a, #7b2cbf);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(52, 0, 104, 0.4);
+}
+
+.study-more-btn:hover {
+ background: linear-gradient(135deg, #ff6347, #ff4500, #ff7f50);
+  transform: scale(1.07);
+  box-shadow: 0 10px 20px rgba(52, 0, 104, 0.6);
+}
+
+.study-more-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(52, 0, 104, 0.5);
+}
+/* Container for all DBMS buttons */
+.dbms-buttons-container {
+  margin-bottom: 20px;
+}
+
+/* Top row: left-right alignment */
+.dbms-top-row {
+  display: flex;
+  justify-content: space-between; /* left-right alignment */
+  margin-bottom: 15px;
+}
+
+/* Second row: center alignment */
+.dbms-second-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional: maintain existing button styles */
+.dbms-top-row .practice-sql-btn,
+.dbms-second-row .practice-sql-btn {
+  width: 48%; /* top row buttons equal width */
+  max-width: 200px;
+}
+
+.dbms-second-row .practice-sql-btn {
+  width: auto; /* center button auto width */
+}
+
+
+.dsa-buttons-row {
+  display: flex;
+  justify-content: space-between; /* left and right alignment */
+  margin-bottom: 20px;
+}
+
+.practice-dsa-btn {
+  background: linear-gradient(135deg, #340068, #5a189a, #7b2cbf);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(52, 0, 104, 0.4);
+}
+
+.practice-dsa-btn:hover {
+  background: linear-gradient(135deg, #ff6347, #ff4500, #ff7f50);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(52, 0, 104, 0.6);
+}
+
+.practice-dsa-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(52, 0, 104, 0.5);
+}
+
+.oop-video-btn-container {
+  text-align: center; /* center the button */
+  margin-bottom: 20px;
+}
+
+.oop-video-btn {
+  background: linear-gradient(135deg, #7b2cbf, #5a189a, #340068);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 10px 20px rgba(52, 0, 104, 0.6);
+}
+
+.oop-video-btn:hover {
+  background: linear-gradient(135deg, #ff6347, #ff4500, #ff7f50);
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(52, 0, 104, 0.6);
+}
+
+.oop-video-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(255, 99, 71, 0.5);
+}
